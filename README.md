@@ -1,0 +1,2 @@
+# HealthCareApp
+TypeScriptで作成する健康管理アプリ
