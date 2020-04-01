@@ -1,23 +1,21 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true
   },
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
-  },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    project: "./tsconfig.json",
     sourceType: "module"
   },
   plugins: ["@typescript-eslint"],
-  root: true,
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
