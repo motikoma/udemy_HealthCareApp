@@ -1,20 +1,11 @@
 {
-  "css.validate": true,
-  "editor.formatOnSave": true,
-  "eslint.codeActionsOnSave.mode": "problems",
-  "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript"
-  ],
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "stylelint.enable": true,
-  "typescript.tsserver.trace": "verbose",
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
+  "eslint.options": {
+    "configFile": "./.eslintrc.js"
   },
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "editor.codeActionsOnSaveTimeout": 1500,
+  "eslint.nodePath": "./node_modules"
 }
