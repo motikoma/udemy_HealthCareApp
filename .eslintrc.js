@@ -85,6 +85,8 @@ module.exports = {
       }],
       // 動画のキャプションファイル（WebVTT）は毎回用意できないので必須化しない
       "jsx-a11y/media-has-caption": "off",
+      // importする際に相対パスの使用を許可しない
+      "import/no-unresolved": "off",
   },
   overrides: [
       {
