@@ -2,6 +2,8 @@ import {IScore} from './interfaces.js';
 import {Foods} from './foods.js';
 
 export class Score implements IScore {
+    // private:定義があるクラス以外からの操作を禁止
+    // static:クラスに属する
     private static instance: Score;
 
     public get totalScore(): number {

@@ -38,6 +38,7 @@ export class Foods implements IFoods {
         });
     }
 
+    // staticをつけたプロパティはインスタンスではなくてクラスに属する
     public static getInstance(): Foods {
         if (!Foods.instance) {
             Foods.instance = new Foods();

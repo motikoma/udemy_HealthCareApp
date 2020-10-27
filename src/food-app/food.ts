@@ -6,6 +6,7 @@ export class Food implements IFood {
 
     public constructor(element: HTMLDivElement) {
         this.element = element;
+        // この関数で使われるthisはこのクラスのインスタンス
         element.addEventListener('click', this.clickEventHandler.bind(this));
     }
 
